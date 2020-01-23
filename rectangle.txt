@@ -1,0 +1,9 @@
+.subckt mul32 A[31:0] B[31:0] mul[31:0]
+
+XB0 A[31:0] B0#32 BA[31:1] P0 AND2 
+
+XB1   A[30:0] B1#31 BA[31:1] CA[29:0] 0 BB[30:1] P1  CA[30:0] FAND
+           	      	           	  	      	          
+
+X1 P[31:0] mul[31:0] knex
+.ends
